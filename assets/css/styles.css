@@ -1,4 +1,4 @@
-/*!   
+/*!
  * Template Name: Developer - Portfolio Landing Page Template for Developers
  * Version: 2.3
  * Author: Xiaoying Riley
@@ -135,6 +135,8 @@ a.dotted-link:hover {
 
 .header .profile-image {
   margin-right: 30px;
+  height: 20%;
+  width: 20%;
 }
 
 .header .profile-content .name {
