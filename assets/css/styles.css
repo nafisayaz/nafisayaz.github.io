@@ -133,8 +133,7 @@ a.dotted-link:hover {
 }
 .menubar a{
   /* margin-left: 55%; */
-  padding: 20px 0;
-  pad
+  padding-right: 20px 0;
   color: azure;
   font-weight: bold;
 }
