@@ -129,9 +129,16 @@ a.dotted-link:hover {
 }
 
 .menubar a{
-  margin-left: 70%;
+  margin-left: 60%;
   color: azure;
   font-weight: bold;
+}
+
+.menubar a:hover{
+  margin-left: 60%;
+  color: #009933 ;
+  font-weight: bold;
+  cursor: default;
 }
 
 /* ======= Header ======= */
