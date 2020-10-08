@@ -125,7 +125,7 @@ a.dotted-link:hover {
 
 /* ======= menubar ======= */
 .menubar {
-  /* padding: 3px 0; */
+  padding: 1px 0; */
   background: #444c55;
 }
 .menubar ul{
@@ -149,7 +149,7 @@ a.dotted-link:hover {
 
 /* ======= Header ======= */
 .header {
-  padding: 10px 0;
+  padding: 0px 0;
   background: #f5f5f5;
   /* border-top: 1px solid #778492; */
 }
