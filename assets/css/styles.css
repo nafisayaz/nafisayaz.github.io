@@ -139,7 +139,7 @@ a.dotted-link:hover {
   margin-left: 55%;
   color: #009933 ;
   font-weight: bold;
-  cursor:crosshair;
+  cursor:pointer;
 }
 
 /* ======= Header ======= */
