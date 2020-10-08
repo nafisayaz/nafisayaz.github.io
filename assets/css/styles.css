@@ -129,13 +129,13 @@ a.dotted-link:hover {
   background: #444c55;
 }
 
-.menubar .social a{
+.menubar a{
   margin-left: 55%;
   color: azure;
   font-weight: bold;
 }
 
-.menubar .social a:hover{
+.menubar a:hover{
   margin-left: 55%;
   color: #009933 ;
   font-weight: bold;
