@@ -15,8 +15,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-li.item:hover {
-  color: "red"
+.item:hover {
+  color: blue;
+}
+.item:hover {
+  color: red;
 }
 
 h1, h2, h3, h4, h5, h6 {
