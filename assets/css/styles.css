@@ -136,10 +136,10 @@ a.dotted-link:hover {
 }
 
 .menubar a:hover{
-  margin-left: 60%;
+  margin-left: 55%;
   color: #009933 ;
   font-weight: bold;
-  cursor: default;
+  cursor:crosshair;
 }
 
 /* ======= Header ======= */
