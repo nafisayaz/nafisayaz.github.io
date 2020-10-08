@@ -15,12 +15,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.item {
-  color: blue;
-}
-.item:hover {
-  color: red;
-}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -184,6 +178,9 @@ a.dotted-link:hover {
 .header .profile-content .social a .svg-inline--fa {
   font-size: 20px;
   margin-top: 8px;
+}
+.social .item:hover{
+  color: #5646f5;
 }
 
 /* ======= Sections======= */
