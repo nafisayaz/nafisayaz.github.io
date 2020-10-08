@@ -125,7 +125,7 @@ a.dotted-link:hover {
 
 /* ======= menubar ======= */
 .menubar {
-  padding: 3px 0;
+  /* padding: 3px 0; */
   background: #444c55;
 }
 .menubar ul{
