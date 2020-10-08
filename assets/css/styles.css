@@ -9,7 +9,8 @@
 body {
   font-family: 'Lato', arial, sans-serif;
   color: #434343;
-  background: #DAE3E7;
+  /* background: #DAE3E7; */
+  background: #212121;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -124,12 +125,12 @@ a.dotted-link:hover {
 
 /* ======= menubar ======= */
 .menubar {
-  padding: 10px 0;
+  padding: 5px 0;
   background: #444c55;
 }
 
 .menubar a{
-  margin-left: 60%;
+  margin-left: 55%;
   color: azure;
   font-weight: bold;
 }
