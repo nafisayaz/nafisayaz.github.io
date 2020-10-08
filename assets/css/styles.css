@@ -172,14 +172,16 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .social a:hover {
-  background: #778492;
+  /* background: #778492; */
+  background: red;
+
 }
 
 .header .profile-content .social a .svg-inline--fa {
   font-size: 20px;
   margin-top: 8px;
 }
-.social .item:hover{
+.header .profile-content .social .item:hover{
   color: #5646f5;
 }
 
