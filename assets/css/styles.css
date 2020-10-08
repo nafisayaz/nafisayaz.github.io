@@ -125,12 +125,12 @@ a.dotted-link:hover {
 
 /* ======= menubar ======= */
 .menubar {
-  padding: 1px 0; 
+  padding: 1px 0;
   background: #444c55;
 }
 .menubar ul{
   margin-left: 55%;
-  margin-top: 2px;
+  margin-top: 0.5%;
 }
 .menubar a{
   /* margin-left: 55%; */
