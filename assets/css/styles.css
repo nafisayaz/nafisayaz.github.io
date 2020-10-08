@@ -135,7 +135,7 @@ a.dotted-link:hover {
   font-weight: bold;
 }
 
-.menubar a:hover{
+.menubar ul a:hover{
   margin-left: 55%;
   color: #009933 ;
   font-weight: bold;
