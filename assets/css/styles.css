@@ -128,15 +128,19 @@ a.dotted-link:hover {
   padding: 5px 0;
   background: #444c55;
 }
-
-.menubar a{
+.menubar ul{
   margin-left: 55%;
+}
+.menubar a{
+  /* margin-left: 55%; */
+  padding: 10px 0;
   color: azure;
   font-weight: bold;
 }
 
 .menubar a:hover{
-  margin-left: 55%;
+  /* margin-left: 55%; */
+  padding: 10px 0;
   color: #009933 ;
   font-weight: bold;
   cursor:pointer;
