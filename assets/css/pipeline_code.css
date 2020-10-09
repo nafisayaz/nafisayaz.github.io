@@ -4,11 +4,11 @@
 
 .code-section{
   padding: 20px;
-  background: black;
+  /* background: black; */
 }
 
-p.code {
-  /* white-space: pre-wrap; */
+.code-section p {
+  white-space:pre;
   color: white;
 }
 p.code:before {
