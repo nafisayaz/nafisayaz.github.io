@@ -4,12 +4,12 @@
 
 .code-section{
   padding: 20px;
-  /* background: black; */
+  background: black;
 }
 
 .code-section p {
   white-space:pre;
-  color: white;
+  color: blue;
 }
 p.code:before {
   counter-reset: listing;
@@ -20,10 +20,10 @@ p.code code {
 p.code code::before {
   content: counter(listing) ". ";
   display: inline-block;
-  width: 8em;         /* now works */
-  padding-left: auto; /* now works */
-  margin-left: auto;  /* now works */
-  text-align: right;  /* now works */
+  /* width: 8em;          */
+  padding-left: auto;
+  margin-left: auto;
+  text-align: right;
 }
 
 
