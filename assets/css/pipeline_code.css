@@ -1,9 +1,10 @@
 
 
 .code-section{
+  padding: 20px;
   background: black;
 }
 
-.code-inner-section{
+.code-section .code-inner-section{
   padding: 20px;
 }
