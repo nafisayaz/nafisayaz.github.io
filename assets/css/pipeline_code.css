@@ -8,10 +8,11 @@
 }
 
 .code-section p {
-  white-space:pre;
+  white-space:pre-wrap;
 }
 p.code:before {
   counter-reset: listing;
+  color:yellow;
 
 }
 
