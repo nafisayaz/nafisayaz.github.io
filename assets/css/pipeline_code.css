@@ -7,16 +7,17 @@
   background: black;
 }
 
-pre.code {
+p.code {
   white-space: pre-wrap;
+  color: white;
 }
-pre.code:before {
+p.code:before {
   counter-reset: listing;
 }
-pre.code code {
+p.code code {
   counter-increment: listing;
 }
-pre.code code::before {
+p.code code::before {
   content: counter(listing) ". ";
   display: inline-block;
   width: 8em;         /* now works */
