@@ -8,7 +8,7 @@
 }
 
 .code-section p {
-  white-space:pre-wrap;
+  white-space:pre-line;
 }
 p.code:before {
   counter-reset: listing;
@@ -23,10 +23,6 @@ p.code code {
 p.code code::before {
   content: counter(listing) ". ";
   display: inline-block;
-  /* width: 8em;          */
-  padding-left: auto;
-  margin-left: auto;
-  /* text-align: right; */
   color:yellow;
 }
 
