@@ -698,6 +698,6 @@ a.dotted-link:hover {
 @media (min-width: 1400px) {
   .container {
     width: 90%;    /*==================================== added here =========================== */
-    max-width: inherit;
+    /* max-width: inherit; */
   }
 }
