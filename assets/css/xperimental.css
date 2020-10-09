@@ -223,7 +223,8 @@ a.dotted-link:hover {
 }
 
 .section .section-inner {
-  background: #fff;
+  background: #922B21;
+  /* background: #fff; */
   padding: 30px;
 }
 
