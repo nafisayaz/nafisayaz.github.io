@@ -1,10 +1,26 @@
 
 
+
+
 .code-section{
   padding: 20px;
   background: black;
 }
 
-.code-section .code-inner-section{
-  padding: 20px;
+pre.code {
+  white-space: pre-wrap;
+}
+pre.code:before {
+  counter-reset: listing;
+}
+pre.code code {
+  counter-increment: listing;
+}
+pre.code code::before {
+  content: counter(listing) ". ";
+  display: inline-block;
+  width: 8em;         /* now works */
+  padding-left: auto; /* now works */
+  margin-left: auto;  /* now works */
+  text-align: right;  /* now works */
 }
