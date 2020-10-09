@@ -12,6 +12,7 @@
 }
 p.code:before {
   counter-reset: listing;
+
 }
 
 p.code code {
@@ -26,6 +27,7 @@ p.code code::before {
   /* padding-left: auto; */
   /* margin-left: auto; */
   /* text-align: right; */
+  color:yellow;
 }
 
 
