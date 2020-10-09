@@ -142,11 +142,14 @@ a.dotted-link:hover {
 .menubar a:hover{
   /* margin-left: 55%; */
   padding: 20px 20px;
-  color: #009933 ;
+  color: #009933;
   font-weight: bold;
   cursor:pointer;
 }
+.menubar a:active{
+  color: #009933;
 
+}
 /* ======= Header ======= */
 .header {
   padding: 20px 0;
