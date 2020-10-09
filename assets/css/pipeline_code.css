@@ -9,13 +9,15 @@
 
 .code-section p {
   white-space:pre;
-  color: blue;
 }
 p.code:before {
   counter-reset: listing;
 }
+
 p.code code {
   counter-increment: listing;
+  color: white;
+
 }
 p.code code::before {
   content: counter(listing) ". ";
