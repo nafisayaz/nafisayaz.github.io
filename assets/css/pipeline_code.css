@@ -2,5 +2,8 @@
 
 .code-section{
   background: black;
+}
+
+.code-inner-section{
   padding: 20px;
 }
