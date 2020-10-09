@@ -211,12 +211,14 @@ a.dotted-link:hover {
 .sections-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #F8F9F9;
+  /* background: #F8F9F9; */
 
 }
 
 .section {
   margin-bottom: 30px;
+  /* background: #F8F9F9; */
+  
 }
 
 .section .section-inner {
