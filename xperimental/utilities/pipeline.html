@@ -65,12 +65,11 @@
                           <h1 class="heading">Pipeline Utilities </h1>
                           <div class="content">
                               <p>
-                                <li>Pipeline utilities is a small C++ utility, written in C++17. This utility is mainly for filtration from data structures,
-                                  can be used in both C++ standard libraries like
+                                <li>Pipeline is a small and effective functionalities, written in C++17. rovides many pipeline functions that can be used in both C++ standard libraries like
                                   <span> <a href = "https://en.cppreference.com/w/cpp/container/list" style = "color: #3AAA64; font-weight:300 italic"> std::list </a></span> ,
                                   <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> std::vector </a></span> ,
-                                  and <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> xperimental::list_sm </a></span> ,
-                                  <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> xperimental::array_sm </a></span>.
+                                  and also xperimental datastructures like <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> xperimental::list_sm </a></span> ,
+                                  <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> xperimental::array_sm and so on. </a></span>.
                                    It's fast and concise, increases industrial productivity.
 
                               </p>
@@ -119,6 +118,17 @@
                                 <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: v_int){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
+
+                                <code>    &emsp;&emsp;<span class="green">auto<span class="black"> value = xperimental::from(v_int) |
+                                <code>    &emsp;&emsp; &emsp;&emsp; &emsp;&emsp;xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">}) | </code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x*<span class="red">100<span class="black"> == <span class="red"> 0<span class="black">;</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">}); </code>
+                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: v_int){</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">}</code>
+
                                 <code>    <span class="black">}</code>
                                 <code>    </code>
                               </p>
@@ -133,6 +143,9 @@
                               <p> 45  </p>
                             </div>
 
+                            <div class="content">
+                                <p>  </p>
+                            </div>
 
                       </div>
                   </section>
