@@ -193,6 +193,48 @@
                                   </p>
                                 </div>
 
+                                <div class="code-section">
+                                    <p class = "code" >
+                                      <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
+                                      <code>    <span class="include">#include<span class="red"><<span>xperimental/pipe.h++<span>></span> </code>
+                                      <code>    </code>
+                                      <code>    <span class="green">int <span class="black">main(){</span></code>
+                                      <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
+                                      <code>    &emsp;&emsp;<span class="black">xperimental::variable<<span class="green">int<span class="black">> variable;</code>
+                                      <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> filtered_value = xperimental::from(v_int) | xperimental::sort([](<span class="green">auto<span class="black"> x){  </code>
+                                      <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
+                                      <code>    &emsp;&emsp;<span class="black">});</code>
+                                      <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Sorted values: \n"<span class="black">;</code>
+                                      <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
+                                      <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
+                                      <code>    &emsp;&emsp;<span class="black">}</code>
+                                      <code>    <span class="black">}</code>
+                                      <code>    </code>
+                                    </p>
+                                  </div>
+      <!-- ======================================== Explanations========================================= -->
+                                  <div class="content">
+                                      <p> Output: </p>
+                                  </div>
+                                  <div class="output-section">
+                                    <p> =============== Filtered values:  </p>
+                                    <p> 12  </p>
+                                    <p> 33  </p>
+                                    <p> 45  </p>
+                                    <p> =============== Transformed values:  </p>
+                                    <p> 1200  </p>
+                                    <p> 3300  </p>
+                                    <p> 4500  </p>
+                                  </div>
+
+                                  <div class="content">
+                                    <p>
+                                        xperimental::from is applicable of any primitive data-types: int , float, std::string and xperimental datastructures like: xperimental::array of any data-type, xperimental::filter and
+                                        xperimental::transform can take Lambda expression and Callable object that creates objects if there is no further pipe after that otherwise return data. Returned result is xperimental::array<<span class="green">int<span class="black">>
+
+                                    </p>
+                                  </div>
+
                       </div>
                   </section>
             </div>
