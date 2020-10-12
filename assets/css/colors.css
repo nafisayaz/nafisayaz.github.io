@@ -1,26 +1,32 @@
 
 
 .red{
+  font-weight: bold;
   color: red;
 }
 
 .green{
+  font-weight: bold;
   color: green;
 }
 
 .white{
   color: white;
+  font-weight: bold;
 }
 
 .black{
+  font-weight: bold;
   color: black;
 }
 
 
 .yellow{
+  font-weight: bold;
   color:#cc6600;
 }
 
 .include{
+  font-weight: bold;
   color:#773c57;
 }
