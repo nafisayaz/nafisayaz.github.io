@@ -116,7 +116,7 @@
                                 <code>    &emsp;&emsp;xperimental::array<<span class="green">int<span class="black">> filtered_value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">});</code>
-                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Filtered: \n"<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Filtered values: \n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
@@ -126,7 +126,7 @@
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}) | xperimental::transform([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x*<span class="red">100<span class="black">;</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">}); </code>
-                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Transformed: \n"<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Transformed values: \n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: transformed_value){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
