@@ -166,7 +166,7 @@
                                   <code>    &emsp;&emsp;<span class="black">xperimental::variable<<span class="green">int<span class="black">>variable;</code>
                                   <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
                                   <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> filtered_value = xperimental::from(v_int) | xperimental::filter([&variable](){  </code>
-                                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> variable * <span class="red">4<span class="black"> == variable * variable <span class="red">4<span class="black">;</code>
+                                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> variable * <span class="red">4<span class="black"> == variable * variable * <span class="red">4<span class="black">;</code>
                                   <code>    &emsp;&emsp;<span class="black">});</code>
                                   <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Filtered values: \n"<span class="black">;</code>
                                   <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
