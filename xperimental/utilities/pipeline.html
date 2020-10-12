@@ -113,7 +113,7 @@
                                 <code>    </code>
                                 <code>    <span class="green">int <span class="black">main(){</span></code>
                                 <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">13<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
-                                <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;<span class="green">auto<span class="black">> value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">});</code>
                                 <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: v_int){</code>
@@ -127,7 +127,7 @@
 
 <!-- ======================================== Explanations========================================= -->
 
-      
+
 
                       </div>
                   </section>
