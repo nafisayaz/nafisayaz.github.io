@@ -23,7 +23,8 @@ p.code code {
 p.code code::before {
   content: counter(listing) ". ";
   display: inline-block;
-  color:yellow;
+  color:white;
+  /* color:yellow; */
 }
 
 
