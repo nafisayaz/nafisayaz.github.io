@@ -113,21 +113,21 @@
                                 <code>    </code>
                                 <code>    <span class="green">int <span class="black">main(){</span></code>
                                 <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
-                                <code>    &emsp;&emsp;<span class="green">auto<span class="black"> value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;<span class="green">auto<span class="black"> filtered_value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">});</code>
                                 <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Filtered: \n"<span class="black">;</code>
-                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: v_int){</code>
+                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
                                 <code></code>
-                                <code>    &emsp;&emsp;<span class="green">auto<span class="black"> value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;<span class="green">auto<span class="black"> transformed_value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}) | xperimental::transform([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x*<span class="red">100<span class="black">;</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">}); </code>
                                 <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Transformed: \n"<span class="black">;</code>
-                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: v_int){</code>
+                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: transformed_value){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
                                 <code></code>
@@ -153,7 +153,8 @@
                             <div class="content">
                               <p>
                                   xperimental::from is applicable of any primitive data-types: int , float, std::string and xperimental datastructures like: xperimental::array of any data-type, xperimental::filter and
-                                  xperimental::transform can take Lambda expression and Callable object that creates objects if there is no further pipe after that otherwise return data.
+                                  xperimental::transform can take Lambda expression and Callable object that creates objects if there is no further pipe after that otherwise return data. Return result is xperimental::array of
+                                  int-type 
                               </p>
                             </div>
 
