@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Pipeline</title>
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+      <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+      <link rel="shortcut icon" href="favicon.ico">
+
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+      <!-- FontAwesome JS -->
+      <script defer src="../../assets/fontawesome/js/all.js"></script>
+
+      <!-- Global CSS -->
+      <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+      <!-- github calendar css -->
+      <link rel="stylesheet" href="../../assets/plugins/github-calendar/dist/github-calendar.css">
+      <!-- github activity css -->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+      <link rel="stylesheet" href="../../assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+      <!-- Theme CSS -->
+      <link id="theme-style" rel="stylesheet" href="../../assets/css/xperimental.css">
+      <link id="theme-style" rel="stylesheet" href="../../assets/css/pipeline_code.css">
+      <link id="theme-style" rel="stylesheet" href="../../assets/css/colors.css">
+
+    </head>
+
+    <body>
+      <header class="menubar">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href = "/xperimental_lib.html">Xperimental Library</a></li>
+          <li class="list-inline-item"><a href = "/xperimental_lib.html">Zudoov AI</a></li>
+          <li class="list-inline-item"><a href = "/xperimental_lib.html">CppCDS</a></li>
+        <ul>
+      </header>
+      <header class="header">
+          <div class="container clearfix">
+              <img class="profile-image img-fluid float-left rounded-circle" style="height:150px; width:150px" src="../../assets/images/me.svg" alt="profile image" />
+              <div class="profile-content float-left">
+                  <h1 class="name">Nafis Ayaz</h1>
+                  <h2 class="desc">C++ Software Engineer</h2>
+                  <ul class="social list-inline">
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                      <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </header>
+
+
+      <div class="container sections-wrapper">
+
+                  <section class="about section">
+                      <div class="section-inner shadow-sm rounded">
+                          <h1 class="heading">Pipeline Utilities </h1>
+                          <div class="content">
+                              <p>
+                                <li>Pipeline is a small and effective functionalities, written in C++17. rovides many pipeline functions that can be used in both C++ standard libraries like
+                                  <span> <a href = "https://en.cppreference.com/w/cpp/container/list" style = "color: #3AAA64; font-weight:300 italic"> std::list </a></span> ,
+                                  <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> std::vector </a></span> ,
+                                  and also xperimental datastructures like <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> xperimental::list_sm </a></span> ,
+                                  <span> <a href = "https://en.cppreference.com/w/cpp/container/vector" style = "color: #3AAA64; font-weight:300 italic"> xperimental::array_sm and so on. </a></span>.
+                                   It's fast and concise, increases industrial productivity.
+
+                              </p>
+                              <h4 class="subheading">Objectives are: </h4>
+                              <p>
+                                <li> Concise and yet readable </li>
+                                <li> Memory management </li>
+                                <li> Ability to handle Inter-process Commmunications </li>
+                                <li> Productivity </li>
+                              </p>
+                              <hr class="divider" />
+                          </div>
+                          <!-- <h4 class="subheading">Supported platform </h4>
+                          <div class="content">
+                              <p>
+                                <li> Win32,  GCC-7.5.0 (MinGW) </li>
+                                <li> Linux,  GCC-7.5.0 </li>
+                              </p>
+                              <hr class="divider" />
+                          </div> -->
+
+                          <h4 class="subheading">Pipeline functions:  </h4>
+                          <div class="content">
+                              <p>
+                                <li> <a href = "#"> xperimental::from </a> </li>
+                                <li> <a href = "#"> xperimental::filter </a> </li>
+                                <li> <a href = "#"> xperimental::variable </a> </li>
+                                <li> <a href = "#"> xperimental::sort </a> </li>
+                                <li> <a href = "#"> xperimental::transform </a> </li>
+                                <li> <a href = "#"> xperimental::dictionary </a> </li>
+                              </p>
+
+                              <hr class="divider" />
+                          </div>
+
+<!-- =============================== CODE SECTION =============================== -->
+                          <div class="code-section">
+                              <p class = "code" >
+                                <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
+                                <code>    <span class="include">#include<span class="red"><<span>xperimental/pipe.h++<span>></span> </code>
+                                <code>    </code>
+                                <code>    <span class="green">int <span class="black">main(){</span></code>
+                                <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
+                                <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> filtered_value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">});</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "Filtered values: "<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> " "<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">}</code>
+                                <code></code>
+                                <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> transformed_value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}) | xperimental::transform([](<span class="green">auto<span class="black"> x){  </code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x*<span class="red">100<span class="black">;</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">}); </code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "Transformed values: "<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: transformed_value){</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> " "<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">}</code>
+                                <code></code>
+                                <code>    <span class="black">}</code>
+                                <code>    </code>
+                              </p>
+                            </div>
+<!-- ======================================== Explanations========================================= -->
+                            <div class="content">
+                                <p> Output: </p>
+                            </div>
+                            <div class="output-section">
+                              <p> Filtered values: 12 33 45  </p>
+                              <p> Transformed values: 1200 3300 4500  </p>
+                            </div>
+
+                            <div class="content">
+                              <p>
+                                  xperimental::from is applicable of any primitive data-types: int , float, std::string and xperimental datastructures like: xperimental::array of any data-type, xperimental::filter and
+                                  xperimental::transform can take Lambda expression and Callable object that creates objects if there is no further pipe after that otherwise return data. Returned result is xperimental::array<<span class="green">int<span class="black">>
+
+                              </p>
+                            </div>
+                            <div class="code-section">
+                                <p class = "code" >
+                                  <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
+                                  <code>    <span class="include">#include<span class="red"><<span>xperimental/pipe.h++<span>></span> </code>
+                                  <code>    </code>
+                                  <code>    <span class="green">int <span class="black">main(){</span></code>
+                                  <code>    &emsp;&emsp;<span class="black">xperimental::variable<<span class="green">int<span class="black">> variable;</code>
+                                  <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
+                                  <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> filtered_value = xperimental::from(v_int) | xperimental::filter([&variable](){  </code>
+                                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> variable * <span class="red">4<span class="black"> == variable * variable * <span class="red">4<span class="black">;</code>
+                                  <code>    &emsp;&emsp;<span class="black">});</code>
+                                  <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Filtered values: \n"<span class="black">;</code>
+                                  <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
+                                  <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> " "<span class="black">;</code>
+                                  <code>    &emsp;&emsp;<span class="black">}</code>
+                                  <code></code>
+                                  <code>    <span class="black">}</code>
+                                  <code>    </code>
+                                </p>
+                              </div>
+                              <div class="content">
+                                <p>
+                                    Using xperimental::variable<<span class="green">int<span class="black">>, we can filter all those data, value of Left Handed Side is equal value Right Handed Side and returns xperimental::array<<span class="green">int<span class="black">>
+                                    we can also implement it in std::find_if like this:
+                                </p>
+                              </div>
+                              <div class="code-section">
+                                  <p class = "code" >
+                                    <code>    &emsp;&emsp;<span class="black">xperimental::variable<<span class="green">int<span class="black">> variable;</code>
+                                    <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
+                                    <code>    &emsp;&emsp;<span class="green">auto<span class="black"> It = std::find_if(v_int.begin(), v_int.end(), <span class="black"> variable * <span class="red">4<span class="black"> == variable * variable * <span class="red">4<span class="black"> );  </code>
+                                    <code></code>
+                                    <code>    </code>
+                                  </p>
+                                </div>
+                                <div class="content">
+                                  <p>
+                                      Using xperimental::variable<<span class="green">int<span class="black">>, can sort values and returns xperimental::array<<span class="green">int<span class="black">>
+                                      we can also implement it in std::find_if like this:
+                                  </p>
+                                </div>
+                                <div class="code-section">
+                                    <p class = "code" >
+                                      <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
+                                      <code>    <span class="include">#include<span class="red"><<span>xperimental/pipe.h++<span>></span> </code>
+                                      <code>    </code>
+                                      <code>    <span class="green">int <span class="black">main(){</span></code>
+                                      <code>    &emsp;&emsp;<span class="black">std::vector<<span class="green">int<span class="black">> int_v = { <span class="red">12<span class="black">, <span class="red">34<span class="black">, <span class="red">33<span class="black">, <span class="red">160<span class="black">,  <span class="red">45<span class="black"> };</code>
+                                      <code>    &emsp;&emsp;<span class="black">xperimental::variable<<span class="green">int<span class="black">> variable;</code>
+                                      <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> sorted_value = xperimental::from(v_int) | xperimental::sort([&variable](<span class="green">auto<span class="black"> x){  </code>
+                                      <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> variable < x;</code>
+                                      <code>    &emsp;&emsp;<span class="black">});</code>
+                                      <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "Sorted values: "<span class="black">;</code>
+                                      <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: sorted_value){</code>
+                                      <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> " "<span class="black">;</code>
+                                      <code>    &emsp;&emsp;<span class="black">}</code>
+                                      <code>    <span class="black">}</code>
+                                      <code>    </code>
+                                    </p>
+                                  </div>
+      <!-- ======================================== Explanations========================================= -->
+                                  <div class="content">
+                                      <p> Output: </p>
+                                  </div>
+                                  <div class="output-section">
+                                    <p>Sorted values: 12 33 34 45 160  </p>
+                                  </div>
+
+                                  <div class="content">
+                                    <p>
+                                        xperimental::from is applicable of any primitive data-types: int , float, std::string and xperimental datastructures like: xperimental::array of any data-type, xperimental::filter and
+                                        xperimental::transform can take Lambda expression and Callable object that creates objects if there is no further pipe after that otherwise return data. Returned result is xperimental::array<<span class="green">int<span class="black">>
+                                    </p>
+                                  </div>
+
+                      </div>
+                  </section>
+            </div>
+
+
+
+<!-- ===============================FOOTER =============================== -->
+            <footer class="footer">
+                <div class="container text-center">
+                        <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                        <small class="copyright">Designed by Nafis Ayaz</small>
+                </div><!--//container-->
+            </footer><!--//footer-->
+
+    </body>
+
+</html>
