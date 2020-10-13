@@ -116,7 +116,7 @@
                                 <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> filtered_value = xperimental::from(v_int) | xperimental::filter([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x%<span class="red">3<span class="black"> == <span class="red"> 0<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">});</code>
-                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Filtered values: \n"<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "Filtered values: "<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: filtered_value){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
@@ -126,7 +126,7 @@
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}) | xperimental::transform([](<span class="green">auto<span class="black"> x){  </code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> x*<span class="red">100<span class="black">;</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">}); </code>
-                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Transformed values: \n"<span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "Transformed values: "<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: transformed_value){</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="black">}</code>
@@ -140,14 +140,8 @@
                                 <p> Output: </p>
                             </div>
                             <div class="output-section">
-                              <p> =============== Filtered values:  </p>
-                              <p> 12  </p>
-                              <p> 33  </p>
-                              <p> 45  </p>
-                              <p> =============== Transformed values:  </p>
-                              <p> 1200  </p>
-                              <p> 3300  </p>
-                              <p> 4500  </p>
+                              <p> Filtered values: 12 33 45  </p>
+                              <p> Transformed: 1200 3300 4500  </p>
                             </div>
 
                             <div class="content">
@@ -209,7 +203,7 @@
                                       <code>    &emsp;&emsp;<span class="black">xperimental::array<<span class="green">int<span class="black">> sorted_value = xperimental::from(v_int) | xperimental::sort([&variable](<span class="green">auto<span class="black"> x){  </code>
                                       <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">return<span class="black"> variable < x;</code>
                                       <code>    &emsp;&emsp;<span class="black">});</code>
-                                      <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "=============== Sorted values: \n"<span class="black">;</code>
+                                      <code>    &emsp;&emsp;<span class="black">std::cout<<<span class="red"> "Sorted values: "<span class="black">;</code>
                                       <code>    &emsp;&emsp;<span class="yellow">for<span class="black">(<span class="green">auto<span class="black"> el: sorted_value){</code>
                                       <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< el <span class="black"> << <span class="red"> "\n"<span class="black">;</code>
                                       <code>    &emsp;&emsp;<span class="black">}</code>
@@ -222,12 +216,7 @@
                                       <p> Output: </p>
                                   </div>
                                   <div class="output-section">
-                                    <p> =============== Sorted values:  </p>
-                                    <p> 12  </p>
-                                    <p> 33  </p>
-                                    <p> 34  </p>
-                                    <p> 45  </p>
-                                    <p> 160  </p>
+                                    <p>Sorted values: 12 33 34 45 160  </p>
 
                                   </div>
 
