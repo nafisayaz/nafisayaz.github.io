@@ -100,9 +100,8 @@
                                 <code>    </code>
                                 <code>    <span class="green">int <span class="black">main(){</span></code>
                                 <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
-                                  <code>    &emsp;&emsp;&emsp;&emsp;<span class="green">auto <span class="black">cleanup =  make_scope_exit([&n]()<span class="green">mutable<span class="black">{ <span class="yellow">delete<span class="black"> n; n=<span class="red">nullptr<span class="black">; }); <span class="black">;</code>
-                                <code>    &emsp;&emsp;&emsp;&emsp;<span class="black">std::cout<< *n <span class="black">;</code>
-                                <code>    &emsp;&emsp;<span class="black">}</code>
+                                <code>    &emsp;&emsp;<span class="green">auto <span class="black">cleanup =  make_scope_exit([&n]()<span class="green">mutable<span class="black">{ <span class="yellow">delete<span class="black"> n; n=<span class="red">nullptr<span class="black">; }); <span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"n = "<span class="black"> << "*n <span class="black">;</code>
                                 <code></code>
                                 <code>    <span class="black">}</code>
                               </p>
@@ -112,8 +111,7 @@
                                 <p> Output: </p>
                             </div>
                             <div class="output-section">
-                              <p> Filtered values: 12 33 45  </p>
-                              <p> Transformed values: 1200 3300 4500  </p>
+                              <p> n = 100 </p>
                             </div>
 
                             <div class="content">
