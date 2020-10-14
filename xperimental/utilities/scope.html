@@ -101,7 +101,7 @@
                           <div class="code-section">
                               <p class = "code" >
                                 <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
-                                <code>    <span class="include">#include<span class="red"><<span>xperimental/scope.h++<span>></span> </code>
+                                <code>    <span class="include">#include<span class="red"><<span>xperimental/scope/scope.h++<span>></span> </code>
                                 <code>    </code>
                                 <code>    <span class="green">int<span class="black">* test(){</span></code>
                                 <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
@@ -133,7 +133,7 @@
                             <div class="code-section">
                                 <p class = "code" >
                                   <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
-                                  <code>    <span class="include">#include<span class="red"><<span>xperimental/scope.h++<span>></span> </code>
+                                  <code>    <span class="include">#include<span class="red"><<span>xperimental/scope/scope.h++<span>></span> </code>
                                   <code>    </code>
                                   <code>    <span class="green">int<span class="black">* test(){</span></code>
                                   <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
@@ -162,6 +162,42 @@
 
                                 </p>
                               </div>
+
+                              <div class="code-section">
+                                  <p class = "code" >
+                                    <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
+                                    <code>    <span class="include">#include<span class="red"><<span>xperimental/scope/smart_ptr.h++<span>></span> </code>
+                                    <code>    </code>
+                                    <code>    <span class="green">int<span class="black"> main(){</span></code>
+                                    <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
+                                    <code>    &emsp;&emsp;<span class="green">auto <span class="black">ptr =  xperimental::make_smart_ptr(new int(100));</code>
+                                    <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"value = "<span class="black"> << ptr << <span class="red">"\n"<span class="black">;</code>
+                                    <code>    &emsp;&emsp;<span class="black">ptr = <span class="red">20<span class="black">; </code>
+                                    <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"value = "<span class="black"> << ptr << <span class="red">"\n"<span class="black">;</code>
+                                    <code>    &emsp;&emsp;<span class="black">++ptr; </code>
+                                    <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"value = "<span class="black"> << ptr << <span class="red">"\n"<span class="black">;</code>
+                                    <code>    <span class="black">}<span class="blue">// deletes the pointer when it goes out of scope </code>
+                                    <code></code>
+                                  </p>
+                                </div>
+                              <!-- ======================================== Explanations========================================= -->
+                                <div class="content">
+                                    <p> Output: </p>
+                                </div>
+                                <div class="output-section">
+                                  <p> value = 100 </p>
+                                  <p> value = 20 </p>
+                                  <p> value = 21 </p>
+                                </div>
+
+                                <div class="content">
+                                  <p>
+                                      xperimental::from is applicable of any primitive data-types: int , float, std::string and xperimental datastructures like: xperimental::array of any data-type, xperimental::filter and
+                                      xperimental::transform can take Lambda expression and Callable object that creates objects if there is no further pipe after that otherwise return data. Returned result is xperimental::array<<span class="green">int<span class="black">>
+
+                                  </p>
+                                </div>
+
                       </div>
                   </section>
             </div>
