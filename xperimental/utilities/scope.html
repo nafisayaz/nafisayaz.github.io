@@ -103,7 +103,7 @@
                                 <code>    </code>
                                 <code>    <span class="green">int <span class="black">main(){</span></code>
                                 <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
-                                <code>    &emsp;&emsp;<span class="green">auto <span class="black">cleanup =  xperimental::make_scope_exit([&n]()<span class="green">mutable<span class="black">{ <span class="yellow">delete<span class="black"> n; n=<span class="red">nullptr<span class="black">; }); <span class="black">;</code>
+                                <code>    &emsp;&emsp;<span class="green">auto <span class="black">cleanup =  xperimental::make_scope_exit([&n]()<span class="green">mutable<span class="black">{ <span class="yellow">delete<span class="black"> n; n=<span class="red">nullptr<span class="black">; });</code>
                                 <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"n = "<span class="black"> << *n <span class="black">;</code>
                                 <code></code>
                                 <code>    <span class="black">}</code>
