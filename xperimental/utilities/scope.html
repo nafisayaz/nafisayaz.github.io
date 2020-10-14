@@ -106,13 +106,13 @@
                                 <code>    <span class="green">int* <span class="black">test(){</span></code>
                                 <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
                                 <code>    &emsp;&emsp;<span class="green">auto <span class="black">cleanup =  xperimental::make_scope_exit([&n]()<span class="green">mutable<span class="black">{ <span class="yellow">delete<span class="black"> n; n=<span class="red">nullptr<span class="black">; });</code>
-                                <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"n = "<span class="black"> << *n <span class="black">;</code>
+                                  <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"n = "<span class="black"> << *n <span class="black"><span class="red">"\n"<span class="black">;</code>
                                 <code>    &emsp;&emsp;<span class="yellow">return <span class="black"> n;</code>
                                 <code></code>
                                 <code>    <span class="black">}</code>
                                 <code>    <span class="green">int <span class="black">main(){</span></code>
-                                <code>    &emsp;&emsp;int<span class="black">* n = test();</code>
-                                <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"n = "<span class="black"> << *n <span class="black">;</code>
+                                <code>    &emsp;&emsp;int<span class="black">* m = test();</code>
+                                <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"m = "<span class="black"> << *m <span class="black"><span class="red">"\n"<span class="black">;</code>
                                 <code></code>
                                 <code>    <span class="black">}</code>
                               </p>
@@ -123,6 +123,7 @@
                             </div>
                             <div class="output-section">
                               <p> n = 100 </p>
+                              <p> m = 65460 </p>
                             </div>
 
                             <div class="content">
@@ -137,10 +138,16 @@
                                   <code>    <span class="include">#include<span class="red"><<span>iostream<span>></span> </code>
                                   <code>    <span class="include">#include<span class="red"><<span>xperimental/scope.h++<span>></span> </code>
                                   <code>    </code>
-                                  <code>    <span class="green">int <span class="black">main(){</span></code>
+                                  <code>    <span class="green">int* <span class="black">test(){</span></code>
                                   <code>    &emsp;&emsp;<span class="green">int<span class="black">* n = <span class="yellow"> new <span class="green">int<span class="black">(<span class="red">100<span class="black">);</code>
-                                  <code>    &emsp;&emsp;<span class="green">auto <span class="black">cleanup =  xperimental::cleanup(n);</code>
+                                    <code>    &emsp;&emsp;<span class="green">auto <span class="black">cleanup =  xperimental::cleanup(n);</code>
                                   <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"n = "<span class="black"> << *n <span class="black">;</code>
+                                  <code>    &emsp;&emsp;<span class="yellow">return <span class="black"> n;</code>
+                                  <code></code>
+                                  <code>    <span class="black">}</code>
+                                  <code>    <span class="green">int <span class="black">main(){</span></code>
+                                  <code>    &emsp;&emsp;int<span class="black">* m = test();</code>
+                                  <code>    &emsp;&emsp;<span class="black">std::cout<< <span class="red">"m = "<span class="black"> << *m <span class="black">;</code>
                                   <code></code>
                                   <code>    <span class="black">}</code>
                                 </p>
@@ -151,6 +158,7 @@
                               </div>
                               <div class="output-section">
                                 <p> n = 100 </p>
+                                <p> m = 784583 </p>
                               </div>
 
                               <div class="content">
