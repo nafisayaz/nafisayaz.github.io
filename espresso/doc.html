@@ -79,16 +79,16 @@
 
                           <div class="code-section">
                               <p class = "code" >
-                                <code>    <span class="include">import<span class="red"><<span>espresso = required(<span class="red">"espresso"<span class="black">); <span>></span> </code>
+                                <code>    <span class="include">import<span class="black"> espresso = required(<span class="red">"espresso"<span class="black">); </code>
                                 <code>    </code>
                                 <code>    <span class="yellow">auto<span class="black"> app = espresso();</code>
-                                <code>    <span class="black"> app.get("/", function(request, response, err){ </code>
-                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">if<span class="black">(err == ERROR){</code>
-                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">console.err("error: ", err );</code>
-                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;}<span class="yellow">else<span class="black">{</code>
+                                <code>    <span class="black"> app.get(<span class="red">"/"<span class="black">, <span class="green">function<span class="black">(request, response, err){ </code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="green">if<span class="black">(err == ERROR){</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console.err(<span class="red">"error: "<span class="black">, err );</code>
+                                <code>    &emsp;&emsp;&emsp;&emsp;&emsp;}<span class="green">else<span class="black">{</code>
                                 <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; response.send(<span class="red">"hello world"<span class="black">);</code>
                                 <code>    <span class="black">});</code>
-                                <code>    <span class="black"> app.run("8080", function(err){ <span class="black">console<span class="black">.log(<span class="red">"Server started at "<span class="black">, <span class="red">8080<span class="black"> ); });</code>
+                                <code>    <span class="black"> app.run(<span class="red">"8080"<span class="black">, <span class="green">function<span class="black">(err){ <span class="black">console<span class="black">.log(<span class="red">"Server started at "<span class="black">, <span class="red">8080<span class="black"> ); });</code>
                                 <code>    </code>
                               </p>
                             </div>
