@@ -8,7 +8,9 @@
 
 
 .code-section{
-  padding: 5px;
+  padding-left: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   background: #D5D8DC;
 }
 
