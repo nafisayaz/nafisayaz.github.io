@@ -162,8 +162,9 @@
               </p>
 
               <a class="content">
-                After creation the object then operator () is called that returns the main espresso application object which is again one-time created. Espresso application object has get-method that takes two arguments:
-                A delimeter and a anonymous callback function. The callback function takes: request, response and error as arguments. The third argument error is optional.
+                Espresso application object has <span class="green">GET<span class="black">, <span class="green">POST<span class="black">, <span class="green">DELETE<span class="black">,
+                <span class="green">PUT<span class="black"> Methods that takes two arguments: a delimeter and a anonymous callback function. The  anonymous callback function takes objects: request, response
+                and error as parameters. The third argument is flag: error which is optional.
               </a>
               <p class="output-section">
                 <code><span class="black"> app.get(<span class="red">"/"<span class="black">, <span class="green">function<span class="black">(request, response, err){</code>
