@@ -73,12 +73,31 @@
                       Distributed to apt repository from where can be installed on Linux system.
                     </li>
                   </p>
-                  <p class="output-section">
-                    <span class="white">$&emsp;<span class="black"> sudo apt-get install gcc-7.5.0
-                    <br><span class="white">$&emsp;<span class="black"> sudo apt-get install espresso
-                  </p>
+
                   <hr class="divider" />
               </div>
+
+              <a class="content">
+                Check Gcc version already install, must have gcc-7.5 or above
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="black"> g++ -version <spane class="blue">&emsp;&emsp; // &emsp; g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+              </p>
+
+              <a class="content">
+                If there is not installed C++ compiler then execute following command as:
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="black">sudo apt-get install gcc-7.5.0 <spane class="blue">&emsp;&emsp; // &emsp; For Installation
+                <br><span class="white">$&emsp;<span class="black">sudo apt-get install gcc-7.5.0 <spane class="blue">&emsp;&emsp; // &emsp; For upgrade
+              </p>
+
+              <a class="content">
+                Once GCC compiler successfully installed then execute folowing command for Espresso Compiler as:
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="black"> sudo apt-get install espresso
+              </p>
 
               <a class="content">
                 To know which version installed:
@@ -87,6 +106,9 @@
                 <span class="white">$&emsp;<span class="green">espresso+ &emsp;<span class="black"> --version<br>
                 <span class="white">$&emsp;<span class="black">installed version:&emsp; Espresso_1.0.0-v<br>
               </p>
+
+
+              <!---  DONE  --------->
               <a class="content">
                 Once compile the code, there will be a executable file called espresso and if you want to put your own executable file name then use <span class="green"> -o xyz.<span class="black content"> This will create xyz executable file.
               </a>
