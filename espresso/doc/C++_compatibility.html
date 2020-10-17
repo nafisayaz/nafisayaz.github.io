@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+      <!-- Meta -->
+      <meta charset="utf-8">
+      <title >C++ | Espresso</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Nafis Ayaz">
+      <link rel="shortcut icon" href="favicon.ico">
+
+      <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+      <!-- FontAwesome JS -->
+      <script defer src="../../assets/fontawesome/js/all.js"></script>
+
+      <!-- Global CSS -->
+      <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+      <!-- github calendar css -->
+      <link rel="stylesheet" href="../../assets/plugins/github-calendar/dist/github-calendar.css">
+      <!-- github activity css -->
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+      <link rel="stylesheet" href="../../assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+      <!-- Theme CSS -->
+      <link id="theme-style" rel="stylesheet" href="../../assets/css/xperimental.css">
+      <link id="theme-style" rel="stylesheet" href="../../assets/css/pipeline_code.css">
+      <link id="theme-style" rel="stylesheet" href="../../assets/css/colors.css">
+
+    </head>
+
+    <body>
+      <header class="menubar">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href = "/xperimental_lib.html">Xperimental Library</a></li>
+          <li class="list-inline-item"><a href = "/espresso/doc.html">Espresso</a></li>
+          <li class="list-inline-item"><a href = "#">Zudoov AI</a></li>
+        <ul>
+      </header>
+      <header class="header">
+          <div class="container clearfix">
+              <img class="profile-image img-fluid float-left rounded-circle" style="height:150px; width:150px" src="../../assets/images/me.svg" alt="profile image" />
+              <div class="profile-content float-left">
+                  <h1 class="name">Nafis Ayaz</h1>
+                  <h2 class="desc">C++ Software Engineer</h2>
+                  <ul class="social list-inline">
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                      <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                      <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </header>
+
+
+      <div class="container sections-wrapper">
+
+        <section class="about section">
+          <div class="section-inner shadow-sm rounded">
+              <h1 class="heading">Espresso: C++ Compatibility </h1>
+              <div class="content">
+                  <p>
+                    <li>Espresso - A web framework that compatible to <span class="green">C++14<span class="black"> and above, for that need to install latest version of GNU-GCC-7.5 or above.
+                      This tutorial will guide every single step for installation and will guide you to build a sample mini project with details about the code structure.
+                      <a href="#">Espresso+</a> compiler which combines espresso code and C++ and converts to executable code. In <a href="#">Espresso+</a> doesn't have C++ compiler, if there is no GNU compiler
+                      it is not possible to execute Espresso code anyways because Espresso framework is built on the top of C++14 and C++17 and so need to upgrade your C++ compiler to latest version.
+                      So Espresso framework could possible to embed C++ code also. The structure of semantics are very concise and readable that makes it's beauty.
+                      Distributed to apt repository from where can be installed on Linux system.
+                    </li>
+                  </p>
+
+                  <hr class="divider" />
+              </div>
+
+              <a class="content">
+                Check Gcc version already install, must have gcc-7.5 or above
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="black"> g++ -version <spane class="blue">&emsp;&emsp; // &emsp; g++ (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+              </p>
+
+              <a class="content">
+                If there is not installed C++ compiler then execute following command as:
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="black">sudo apt-get install gcc-7.5.0 <span class="blue">&emsp;&emsp; // &emsp; For Installation
+                <br><span class="white">$&emsp;<span class="black">sudo apt-get install gcc-7.5.0 <span class="blue">&emsp;&emsp; // &emsp; For upgrade
+              </p>
+
+              <a class="content">
+                Once GCC compiler successfully installed then execute folowing command for Espresso Compiler as:
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="black"> sudo apt-get install espresso
+              </p>
+
+              <a class="content">
+                To know which version installed:
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="green">espresso+ &emsp;<span class="black"> --version <span class="blue">&emsp;&emsp; // &emsp; installed version:&emsp; Espresso_1.0.0-v
+              </p>
+
+
+              <!---  DONE  --------->
+
+              <a class="content">
+                For testing whether Espresso is properly working or not, just copy the following code in <span class="blue">test.es <span class="black">
+              </a>
+              <div class="code-section">
+                <p class = "code" >
+                  <code>    <span class="yellow">auto<span class="black"> espresso = <span class="yellow">import<span class="black">(<span class="red">"espresso"<span class="black">); </code>
+                  <code>    <span class="yellow">auto<span class="black"> app = espresso();</code>
+                  <code>    <span class="black"> app.get(<span class="red">"/"<span class="black">, <span class="green">function<span class="black">(request, response, err){ </code>
+                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="green">if<span class="black">(err == ERROR){</code>
+                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console.err(<span class="red">"error: "<span class="black">, err );</code>
+                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}<span class="green">else<span class="black">{</code>
+                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class="black">response.send(<span class="red">"hello world"<span class="black">);</code>
+                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}</code>
+                  <code>    <span class="black">});</code>
+                  <code>    <span class="black"> app.run(<span class="red">"8080"<span class="black">, <span class="green">function<span class="black">(err){</code>
+                  <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console<span class="black">.log(<span class="red">"Server started at "<span class="black">, <span class="red">8080<span class="black"> );</code>
+                  <code>    <span class="black">});</code>
+                </p>
+              </div>
+
+              <a class="content">
+                Now open the Terminal and run the following command as:
+              </a>
+              <p class="output-section">
+                <span class="white">$&emsp;<span class="green">espresso+ &emsp;<span class="blue">test.es</span><br>
+                <span class="white">$&emsp;<span class="yellow">./espresso  </span><br>
+                <span class="black">&emsp;&emsp; Server started at 8080  </span>
+              </p>
+
+              <a class="content">
+                Once Server is started the open chrome browser and paste the following queryline then you will get the message.
+              </a>
+              <p class="output-section">
+                <span class="black"> localhost:8080</span>
+              </p>
+              <hr class="divider" />
+
+              <a class="content">
+                The import is executed at runtime and return object which is by defualt <span class="green">auto<span class="black"> type.
+                  object is one-time creation throughout the program, next time will give <span class="green">exeptions-throw<spane class="black">. Espresso has many statndard libraries with no file-extension
+                  but user-defined library has to have file-extension i.e <span class="yellow">.es<span class="black">
+              </a>
+              <p class="output-section">
+                <code><span class="yellow">auto<span class="black"> espresso = <span class="yellow">import<span class="black">(<span class="red">"espresso"<span class="black">);</code> &emsp;&emsp; // &emsp; Standard
+                <code><br><span class="yellow">auto<span class="black"> user-defined_lib = <span class="yellow">import<span class="black">(<span class="red">"your-filename.es"<span class="black">); </code> &emsp;&emsp; // &emsp; User-defined
+              </p>
+
+              <a class="content">
+                After creation the object then <code> <span class="yellow">operator</span> ()</code> is called that returns the main espresso application object which is again one-time created.
+              </a>
+              <p class="output-section">
+                <code><span class="yellow">auto<span class="black"> app = espresso();</code>
+              </p>
+
+              <a class="content">
+                Espresso application object has Restfull Methods: <code><span class="green">GET<span class="black">, <span class="green">POST<span class="black">, <span class="green">DELETE<span class="black"> and
+                <span class="green">PUT<span class="black"> </code> Method that takes two arguments: a delimeter and a anonymous callback function. The  anonymous callback function takes objects: request, response
+                and error as parameters. The third argument is flag: error which is optional.
+              </a>
+              <p class="output-section">
+                <code><span class="black"> app.get(<span class="red">"/"<span class="black">, <span class="green">function<span class="black">(request, response, err){</code>
+                <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="green">if<span class="black">(err == ERROR){</code>
+                <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console.err(<span class="red">"error: "<span class="black">, err ); </code>
+                <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}<span class="green">else<span class="black">{ </code>
+                <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class="black">response.send(<span class="red">"hello world"<span class="black">); </code>
+                <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">} </code>
+                <code><br><span class="black">}); </code>
+              </p>
+
+              <a class="content">
+                Espresso application object has run function that takes two arguments: Port number and a anonymous callback function which takes a flag as a parameter.
+              </a>
+              <p class="output-section">
+                <code>    <span class="black"> app.run(<span class="red">"8080"<span class="black">, <span class="green">function<span class="black">(err){</code>
+                <code>    <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console<span class="black">.log(<span class="red">"Server started at "<span class="black">, <span class="red">8080<span class="black"> );</code>
+                <code>    <br><span class="black">});</code>
+              </p>
+
+              <br><hr class="divider" /><br>
+
+              <div class="content">
+                <a>
+                  APIs reference documentation, provides details information about all fuctions and objects of Espresso, this documentation expalins every APIs in more details, so to implement easily
+                  C++ projects and all APIs are complete compatible with C++11/14/17.
+                </a>
+              </div>
+
+            <div class="content">
+                <a>
+                  Espresso is very fast web-framework hybrid of C++, the main objective is just to make it easy and simple for C++ developers. This framework is built on top of C++14 and above
+                </a>
+                <br><a><span class="green">NOTE:<span class="black"> It's the first version: Espresso_v_1.0.0, so there may occur some exeptions-throw, error or you find any idea.</a>
+                <br><a><span class="black">Kindly contact me: <span class="green">sir.ayaz47@gmail.com</span></a>
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+
+
+<!-- ===============================FOOTER =============================== -->
+      <footer class="footer">
+          <div class="container text-center">
+                  <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                  <small class="copyright">Designed by Nafis Ayaz</small>
+          </div><!--//container-->
+      </footer><!--//footer-->
+
+    </body>
+
+</html>
