@@ -1,29 +1,27 @@
-
-
-.red{
-  color: red;
+.red {
+    color: red;
 }
 
-.green{
-  color: green;
+.green {
+    color: green;
 }
 
-.white{
-  color: white;
+.white {
+    color: white;
 }
 
-.black{
-  color: black;
+.black {
+    color: black;
 }
 
-.blue{
-  color: blue;
+.blue {
+    color: #2851a4;
 }
 
-.yellow{
-  color:#cc6600;
+.yellow {
+    color: #cc6600;
 }
 
-.include{
-  color:#773c57;
+.include {
+    color: #773c57;
 }
