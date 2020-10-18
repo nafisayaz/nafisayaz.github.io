@@ -22,17 +22,17 @@
     color: #666;
 }
 
+.micro {
+    color: #734d26;
+}
+
 
 /* 
 .micro {
-    color: #734d26;
-} */
-
-.micro {
     /*color: rgb(16, 16, 202); 
-    color: #6600cc; */
+    color: #6600cc; 
     color: #55552b;
-}
+} */
 
 .yellow {
     color: #cc6600;
