@@ -96,39 +96,7 @@
                 </div>
                 <br><br><br>
 
-                <h3 class="title">Warnings </h3>
-                    <a class="content">
-                      Warnings is carefully handled at compiled-time, means unused memory: allocated memory 
-                      but never used. As <a href="#">Function</a> has no return-type may occur compiler will 
-                      emit a message that no return-type is defined, is handled.
-                    </a>
-
-                <br><br>
-                <a class="content">
-                    <span class="green">Compile-time warnings<span class="black">:
-                </a>
-                <p class="output-section">
-                    <code>  <span class="green">function<span class="black"> say() { </code>
-                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
-                    <code>  <br><span class="black">} <span class="comment"> // Warning </code>
-                </p>
-                <p class="output-section">
-                    <code>  <span class="green">function<span class="black"> say() { </code>
-                    <code>  <br>&emsp;&emsp;&emsp;<span class="green"> char<span class="black">* s = <span class="red">"hello"<span class="black">; </code>
-                    <code>  <br>&emsp;&emsp;&emsp;<span class="yellow"> return <span class="black"> s; </code>
-                    <code>  <br><span class="black">} <span class="comment"> // NO Warning </code>
-                </p>
-                <br>
-                <a class="content">
-                    <span class="green">Compile-time warnings<span class="black">: <span class="macro">__no_return<span class="black">
-                </a>
-                <p class="output-section">
-                    <code>  <span class="macro">__no_return <span class="green">function<span class="black"> say() { </code>
-                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
-                    <code>  <br><span class="black">} <span class="comment"> // No Warning  </code>
-                </p>
-
-
+                
                 <br><br>
                 <h3 class="title">Import </h3>
                 <a class="content">

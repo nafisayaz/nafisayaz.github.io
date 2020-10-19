@@ -185,7 +185,32 @@
                     <code>    <br><span class="black">console.log(s);<span class="comment">// Correct </code> 
                 </p>
 
-                
+                <br><br>
+                <a class="content">
+                    <span class="green">Compile-time warnings<span class="black">:
+                </a>
+                <p class="output-section">
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // Warning </code>
+                </p>
+                <p class="output-section">
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="green"> char<span class="black">* s = <span class="red">"hello"<span class="black">; </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="yellow"> return <span class="black"> s; </code>
+                    <code>  <br><span class="black">} <span class="comment"> // NO Warning </code>
+                </p>
+                <br>
+                <a class="content">
+                    <span class="green">Compile-time warnings<span class="black">: <span class="macro">__no_return<span class="black">
+                </a>
+                <p class="output-section">
+                    <code>  <span class="macro">__no_return <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // No Warning  </code>
+                </p>
+
+
 
                 <br><br>
                 
