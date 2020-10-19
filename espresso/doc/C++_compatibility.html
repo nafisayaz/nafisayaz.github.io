@@ -127,12 +127,14 @@
 
                 <h3 class="title">Macro </h3>
                 <a class="content">
-                    <a href="#">Espresso+</a> removes the __cplusplus macros and and compile with gcc-7 compiler.
+                    The macros are flags, the codes inside the curly braces are not executed with Espresso+ compiler. The macros are itself help to differentiate espresso code and c++ code 
+                    <a href="#">Espresso+</a> removes the __cplusplus macros and put as it is. Other than macros, espresso compiler does semantic-analysis, translation and execution. Minimum number of code is sugessted to put inside the
+                multi-staments macro, that code structure is very concise and make esperesso it's beauty.
                 </a>
 
                 <br><br><br>
                 <a class="content">
-                    <span class="green">Multi-statements macro<span class="black"> ( For multiple codes in insiade the curly-braces)
+                    <span class="green">Multi-statements macro<span class="black"> ( Put multiple c++ codes in inside the curly-braces)
                 </a>
                 <p class="output-section">
                     <code>    <span class="micro">__cplusplus<span class="black">{</code>
@@ -143,7 +145,7 @@
                 </p>
 
                 <br><a class="content">
-                  <span class="green">Single-statement macro<span class="black">
+                  <span class="green">Single-statement macro<span class="black"> ( put c++ code after colon)
                 </a>
                 <p class="output-section">
                     <code>    <span class="micro">__cplusplus: <span class="yellow">const <span class="green">char<span class="black">* s = <span class="red">"hello __cplusplus macro"<span class="black">; </code>
