@@ -84,7 +84,7 @@
               <!---  DONE  --------->
 
               <a class="content">
-                For testing whether Espresso is properly working or not, just copy the following code in <span class="blue">test.es <span class="black">
+                C++ code can be included:
               </a>
               <div class="code-section">
                 <p class = "code" >
@@ -124,49 +124,27 @@
                 <p class="output-section">
                     <span class="black"> localhost:8080</span>
                 </p>
-                <hr class="divider" />
+                <hr class="divider" /><br>
+
+                <h3 class="title">Multi-statements Macro: <span class="green">__cplusplus{}<span class="black"> ( For multiple codes in insiade the curly-braces.</h3>
                 <a class="content">
-                The import is executed at runtime and return object which is by defualt <span class="green">auto<span class="black"> type.
-                object is one-time creation throughout the program, next time will give <span class="green">exeptions-throw<spane class="black">. Espresso has many statndard libraries with no file-extension
-                but user-defined library has to have file-extension i.e <span class="yellow">.es<span class="black">
-              </a>
+                  <a href="#">Espresso+</a> removes the __cplusplus micros and and compile with gcc-7 compiler.
+                </a>
                 <p class="output-section">
-                    <code><span class="yellow">auto<span class="black"> espresso = <span class="yellow">import<span class="black">(<span class="red">"espresso"<span class="black">);</code> &emsp;&emsp; // &emsp; Standard
-                    <code><br><span class="yellow">auto<span class="black"> user-defined_lib = <span class="yellow">import<span class="black">(<span class="red">"your-filename.es"<span class="black">); </code> &emsp;&emsp; // &emsp; User-defined
+                    <code>    <span class="micro">__cplusplus<span class="black">{</code>
+                    <code>    <span class="yellow">const <span class="green">char<span class="black">* s = msg.c_str(); </code>
+                    <code>    <span class="comment">// do some more stuffs with C++ ... </code>
+                    <code>    <span class="black">}</code>
                 </p>
 
-                <a class="content">
-                After creation the object then <code> <span class="yellow">operator</span> ()</code> is called that returns the main espresso application object which is again one-time created.
-              </a>
-                <p class="output-section">
-                    <code><span class="yellow">auto<span class="black"> app = espresso();</code>
-                </p>
+                <h3 class="title">Single-statement Macro: <span class="green">__cplusplus:<span class="black"> ( For ) .</h3>
+                  <a class="content">
+                    <a href="#">Espresso+</a> removes the __cplusplus micros and and compile with gcc-7 compiler.
+                  </a>
+                  <p class="output-section">
+                      <code>    <span class="micro">__cplusplus: <span class="yellow">const <span class="green">char<span class="black">* s = msg.c_str(); </code>
+                  </p>
 
-                <a class="content">
-                Espresso application object has Restfull Methods: <code><span class="green">GET<span class="black">, <span class="green">POST<span class="black">, <span class="green">DELETE<span class="black"> and
-                <span class="green">PUT<span class="black"> </code> Method that takes two arguments: a delimeter and a anonymous callback function. The  anonymous callback function takes objects: request, response
-                and error as parameters. The third argument is flag: error which is optional.
-              </a>
-                <p class="output-section">
-                    <code><span class="black"> app.get(<span class="red">"/"<span class="black">, <span class="green">function<span class="black">(request, response, err){</code>
-                    <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="green">if<span class="black">(err == ERROR){</code>
-                    <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console.err(<span class="red">"error: "<span class="black">, err ); </code>
-                    <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}<span class="green">else<span class="black">{ </code>
-                    <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span class="black">response.send(<span class="red">"hello world"<span class="black">); </code>
-                    <code><br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">} </code>
-                    <code><br><span class="black">}); </code>
-                </p>
-
-                <a class="content">
-                Espresso application object has run function that takes two arguments: Port number and a anonymous callback function which takes a flag as a parameter.
-              </a>
-                <p class="output-section">
-                    <code>    <span class="black"> app.run(<span class="red">"8080"<span class="black">, <span class="green">function<span class="black">(err){</code>
-                    <code>    <br>&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">console<span class="black">.log(<span class="red">"Server started at "<span class="black">, <span class="red">8080<span class="black"> );</code>
-                    <code>    <br><span class="black">});</code>
-                </p>
-
-                <br>
                 <hr class="divider" /><br>
 
                 <div class="content">
@@ -182,10 +160,10 @@
                 </a>
                     <br><a><span class="green">NOTE:<span class="black"> It's the first version: Espresso_v_1.0.0, so there may occur some exeptions-throw, error or you find any idea.</a>
                     <br><a><span class="black">Kindly contact me: <span class="green">sir.ayaz47@gmail.com</span></a>
-                </div>
-
             </div>
-        </section>
+
+    </div>
+    </section>
     </div>
 
 
