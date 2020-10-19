@@ -83,6 +83,7 @@
 
                 <div class="content">
                   <p>
+                    <li> <a href="#"> Warnings</a> </li>
                     <li> <a href="#"> Compile-time warnings</a> </li>
                     <li> <a href="#"> Run-time warnings</a> </li>
                     <li> <a href="#"> Exeptions-throw</a> </li>
@@ -104,11 +105,20 @@
 
                 <br><br>
                 <a class="content">
-                    <span class="green">Compile-time warnings<span class="black"> ( )
+                    <span class="green">Compile-time warnings<span class="black">: <span class="macro">__no_return<span class="black">
                 </a>
                 <p class="output-section">
-                  <code><span class="include">#include<span class="red"><<span class="red">iostream><span class="black"></code>
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // will give compile-time warning </code>
                 </p>
+
+                <p class="output-section">
+                    <code>  <span class="macro">__no_return<span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // will give compile-time warning </code>
+                </p>
+
 
                 <br><br>
                 <h3 class="title">Import </h3>
