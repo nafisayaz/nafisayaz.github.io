@@ -84,8 +84,10 @@
 
                 <h3 class="title">Include </h3>
                     <a class="content">
-                      C++ headers can be implemented in espresso file for that need to use macro <span class="macro">__cplusplus, inside the macro
-                      c++ code can be written.
+                      The preprocessor is executed at translation phase 4, before the compilation. 
+                      The result of preprocessing is a single file which is then passed to the actual compiler.
+                      C++ headers can be implemented in espresso file for that need to use macro <span class="macro">__cplusplus<span class="black">, 
+                      inside the macro c++ code can be written.
                     </a>
 
                 <br><br>
@@ -93,22 +95,19 @@
                     <span class="green">include<span class="black"> ( C++ implementation )
                 </a>
                 <p class="output-section">
-                  <code><span class="include">#include<span class="red"><<span class="red">string><span class="black"></code>
+                  <code><span class="include">#include<span class="red"><<span class="red">iostream><span class="black"></code>
                 </p>
 
-
-
-
+                <br><br><br>
                 <h3 class="title">Import </h3>
                 <a class="content">
-                    The macros are flags, the codes inside the curly braces are not executed with Espresso+ compiler. The macros are itself help to differentiate espresso code and c++ code 
-                    <a href="#">Espresso+</a> removes the __cplusplus macros and put as it is. Other than macros, espresso compiler does semantic-analysis, translation and execution. Minimum number of code is sugessted to put inside the
-                multi-staments macro, that code structure is very concise and make esperesso it's beauty.
+                    import is executed at run-time, takes espresso filename and creates object: <span class="green">typeof<span class="black">
+                    <span class="grey">Import<span class="black">. At the translation phase imports some espresso basic headers. 
                 </a>
 
                 <br><br><br>
                 <a class="content">
-                    <span class="green">import<span class="black"> ( Put multiple c++ codes in inside the curly-braces)
+                    <span class="green">import<span class="black"> ( Standard or User-defined )
                 </a>
                 <p class="output-section">
                   <code>    <span class="yellow">auto<span class="black"> espresso = <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">); </code>
