@@ -83,25 +83,28 @@
 
                 <div class="content">
                   <p>
-                      <li> <a href="#"> Run-time warnings</a> </li>
-                      <li> <a href="#"> Compile-time warnings</a> </li>
-                      <li> <a href="#"> Ignore return-type</a> </li>
-                      <li> <a href="#"> Unused memory</a> </li>
-                      <li> <a href="#"> Console </a> </li>
-                      <li> <a href="#"> Console.err </a> </li>
-                      <li> <a href="#"> ERROR </a> </li>
+                    <li> <a href="#"> Compile-time warnings</a> </li>
+                    <li> <a href="#"> Run-time warnings</a> </li>
+                    <li> <a href="#"> Exeptions-throw</a> </li>
+                    <li> <a href="#"> Ignore return-type</a> </li>
+                    <li> <a href="#"> Unused memory</a> </li>
+                    <li> <a href="#"> Console </a> </li>
+                    <li> <a href="#"> Console.err </a> </li>
+                    <li> <a href="#"> ERROR </a> </li>
                   </p>
                 </div>
                 <br><br><br>
 
                 <h3 class="title">Warnings </h3>
                     <a class="content">
-                      
+                      Warnings is carefully handled at compiled-time, means unused memory: allocated memory 
+                      but never used. As <a href="#">Function</a> has no return-type may occur compiler will 
+                      emit a message that no return-type is defined, is handled.
                     </a>
 
                 <br><br>
                 <a class="content">
-                    <span class="green">include<span class="black"> ( c++ header )
+                    <span class="green">Compile-time warnings<span class="black"> ( )
                 </a>
                 <p class="output-section">
                   <code><span class="include">#include<span class="red"><<span class="red">iostream><span class="black"></code>
