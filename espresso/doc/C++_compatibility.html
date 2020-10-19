@@ -98,7 +98,6 @@
                             <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}<span class="green">else<span class="black">{</code>
                             <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="micro">__cplusplus<span class="black">{</code>
                             <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="yellow">const <span class="green">char<span class="black">* s = msg.c_str(); </code>
-                            <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="comment">// do some more stuffs with C++ ... </code>
                             <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}</code>
                             <code>    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">response.send(s);</code>
                             <code>    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="black">}</code>
@@ -137,9 +136,10 @@
                 </a>
                 <p class="output-section">
                     <code>    <span class="micro">__cplusplus<span class="black">{</code>
-                    <code>    <span class="yellow">const <span class="green">char<span class="black">* s = msg.c_str(); </code>
-                    <code>    <span class="comment">// do some more stuffs with C++ ... </code>
-                    <code>    <span class="black">}</code>
+                    <code>    <br><span class="yellow">const <span class="green">char<span class="black">* s = <span class="red">"hello __cplusplus macro"<span class="black">; </code>
+                    <code>    <br><span class="comment">// do some more stuffs with C++ ... </code>
+                    <code>    <br><span class="black">}</code>
+                    <code>    <br><span class="black">std::cout << s;<span class="comment">// Correct </code> 
                 </p>
 
                 <br><a class="content">
