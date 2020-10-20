@@ -206,7 +206,7 @@
 
                 <h3 class="title"> New </h3>
                 <a>
-                  <span class="macro">__new <span class="black"> macro is caused to dynamic memory allocation and a <span class="green">var <span class="black">type.
+                  Allocates dynamic memory allocation, <span class="macro">__new <span class="black"> macro is allocates a memory on heap  and returns a pointer pointing to.
                 </a>
                 <br><br>
                 <a class="content">
@@ -217,12 +217,28 @@
                           <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
                   <code>  <br> <span class="yellow"> var <span class="black"> n = <span class="macro">__new <span class="red">123<span class="black">;</code>
                   <code>  <br>console<span class="black" >.log(<span class="macro">__typeof <span class="black">n); </code>
-                          <span class="comment"> // Integer * type
+                          <span class="comment"> // Integer * type -> naked pointer causes memory leakage
                   
                 </p>
                 <br><br>
 
-
+                <h3 class="title"> Scope </h3>
+                <a>
+                  Allocates dynamic memory allocation, <span class="macro">__new <span class="black"> macro is allocates a memory on heap  and returns a pointer pointing to.
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="macro">__new<span class="black"> macro: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> var <span class="black"> n = scope(<span class="macro">__new <span class="red">123<span class="black">);</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro">__typeof <span class="black">n); </code>
+                          <span class="comment"> // Integer * type -> No memory leakage: Deletes the pointer when goes out of scope
+                  
+                </p>
+                <br><br>
 
 
                 <br>
