@@ -245,9 +245,10 @@
                 </p>
                 <br><br>
 
-                <h3 class="title"> Function </h3>
+                <h3 class="title"> Functions </h3>
                 <a>
-                  Allocates dynamic memory allocation, <span class="macro">__new <span class="black"> macro is allocates a memory on heap  and returns a pointer pointing to.
+                  Espresso provides multiple function like: <span class="green"> Callback function<span class="black">,<span class="green"> Anonymous function<span class="black"> and
+                    <span class="green"> Lambda function<span class="black">
                 </a>
                 <br><br>
                 <a class="content">
@@ -256,13 +257,29 @@
                 <p class="output-section">
                   <code>  <span class="yellow">auto<span class="black"> espresso = 
                           <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
-                  <code>  <br> <span class="yellow"> var <span class="black"> n = scope(<span class="macro">__new <span class="red">123<span class="black">);</code>
-                  <code>  <br>console<span class="black" >.log(<span class="macro">__typeof <span class="black">n); </code>
-                          <span class="comment"> // Integer * type -> No memory leakage: Deletes the pointer when goes out of scope
+                  <code>  <br><span class="green">function <span class="black"> say(){</code>
+                  <code>  <br>&emsp;&emsp;&emsp;&emsp;&emsp; console<span class="black">.log(<span class="red">"hello world"<span class="black">);</code>
+                  <code>  <br><span class="black">}</code>
+                  <code>  <span class="black">say();</code>
+                          <span class="comment"> //Call the say() and prints hello world
                   
                 </p>
-                <br><br>
+                <br>
 
+                <a class="content">
+                  <span class="green">Callback function<span class="black">: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br><span class="green">function <span class="black"> say(){</code>
+                  <code>  <br>&emsp;&emsp;&emsp;&emsp;&emsp; console<span class="black">.log(<span class="red">"hello world"<span class="black">);</code>
+                  <code>  <br><span class="black">}</code>
+                  <code>  <span class="black">say();</code>
+                          <span class="comment"> //Call the say() and prints hello world
+                  
+                </p>
+                <br>
 
 
 
