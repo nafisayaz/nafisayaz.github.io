@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>C++ | Espresso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nafis Ayaz">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="../../assets/fontawesome/js/all.js"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="../../assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="../../assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/xperimental.css">
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/pipeline_code.css">
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/colors.css">
+
+</head>
+
+<body>
+    <header class="menubar">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="/xperimental_lib.html">Xperimental Library</a></li>
+            <li class="list-inline-item"><a href="/espresso/doc.html">Espresso</a></li>
+            <li class="list-inline-item"><a href="#">Zudoov AI</a></li>
+            <ul>
+    </header>
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle" style="height:150px; width:150px" src="../../assets/images/me.svg" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Nafis Ayaz</h1>
+                <h2 class="desc">C++ Software Engineer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container sections-wrapper">
+
+        <section class="about section">
+            <div class="section-inner shadow-sm rounded">
+                <h1 class="heading">Espresso: Espresso and c++ </h1>
+                <div class="content">
+                    <p>
+                        <li>Espresso - A web-framework that is compatible to <span class="green">C++14<span class="black"> and above.
+                      This Tutorial will guide you to implement C++ code in Espresso. As Espresso is wrapper of C++ and so C++ headers can be include for that need to install latest version of GNU-GCC-7.5 or above.
+                      <a href="#">Espresso+</a> compiler which combines espresso code and C++ and converts to executable code. In <a href="#">Espresso+</a> doesn't have C++ compiler, if there is no GNU compiler
+                      it is not possible to execute Espresso code anyways because Espresso framework is built on the top of C++14 and C++17 and so need to upgrade your C++ compiler to latest version.
+                      So Espresso framework could possible to embed C++ code also. The structure of semantics are very concise and readable that makes it's beauty.
+                      Distributed to apt repository from where can be installed on Linux system.
+                    </li>
+                  </p>
+
+              </div>
+
+              <a class="content">
+                Check Gcc version already install, must have gcc-7.5 or above. Follow the link: <a href="../../espresso/doc/get_started.html"> Get Started </a>
+              </a><br>
+              
+                <hr class="divider" /><br>
+
+                <div class="content">
+                  <p>
+                      <li> <a href="#"> Include</a> </li>
+                      <li> <a href="#"> Import</a> </li>
+                      <li> <a href="#"> Bind </a> </li>
+                      <li> <a href="#"> Operator </a> </li>
+                      <li> <a href="#"> Typeof </a> </li>
+                      <li> <a href="#"> Macros </a> </li>
+                      <li> <a href="#"> Single-statement macro </a> </li>
+                      <li> <a href="#"> Multi-statements macro </a> </li>
+                      <li> <a href="#"> Warning macro </a> </li>
+                  </p>
+                </div>
+                <br><br><br>
+
+                <h3 class="title">Include </h3>
+                    <a class="content">
+                      <span class="black">The preprocessor is executed at translation phase 4, before the compilation. 
+                      The result of preprocessing is a single file which is then passed to the actual compiler.
+                      C++ headers can be implemented in espresso file for that need to use macro 
+                      <span class="macro">__cplusplus<span class="black">, 
+                      inside the macro c++ code can be written.
+                    </a>
+
+                <br><br>
+                <a class="content">
+                    <span class="green">include<span class="black"> ( c++ header )
+                </a>
+                <p class="output-section">
+                  <code><span class="include">#include<span class="red"><<span class="red">iostream><span class="black"></code>
+                </p>
+
+                <br><br>
+                <h3 class="title">Import </h3>
+                <a class="content">
+                  <span class="black">import is executed at run-time, takes espresso filename and creates object: 
+                  <span class="green"> typeof
+                  <span class="grey"> Import
+                <br><br>
+                <a class="content">
+                  <span class="green">import<span class="black"> ( Standard or User-defined )
+                </a>
+                <p class="output-section">
+                  <code>    <span class="yellow">auto<span class="black"> espresso = <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">); </code>
+                  <span class="comment"> // Standard
+                  <code>    <br><span class="yellow">auto<span class="black"> espresso = <span class="include">import<span class="black">(<span class="red">"filename.es"<span class="black">); </code>
+                  <span class="comment"> // User-defined 
+                
+                </p>
+                <br>
+
+                <a class="content">
+                  <span class="green">Bind<span class="black">: with <span class="grey">. operator</code>
+                  and return http protocol object 
+                </a>
+                <p class="output-section">
+                  <code><span class="yellow">auto<span class="black"> espresso = 
+                  <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">).(<span class="red">"http"<span class="black">);
+                  </code>
+                </p>
+
+                <br>
+                <a class="content">
+                  <span class="green">Operator<span class="black">: calls Operator <code> ()</code>
+                  and return main application object which is binded to http protocol 
+                </a>
+                <p class="output-section">
+                  <code><span class="yellow">auto<span class="black"> app = espresso();</code>
+                </p>
+                <br>
+                <a class="content">
+                  <span class="green">Typeof<span class="black">: Return (String)</code>
+                  and return main application object which is binded to http protocol 
+                </a>
+                <p class="output-section">
+                  <code><span class="yellow">console.log(<span class="green">typeof<span class="black">(app)); <span class="comment">// Return Http  </code>
+                </p>
+
+                <br><br><h3 class="title">Macro </h3>
+                <a class="content">
+                    The macros are flags, the codes inside the curly braces are not executed with Espresso+ compiler. The macros are itself help to differentiate espresso code and c++ code 
+                    <a href="#">Espresso+</a> removes the __cplusplus macros and put as it is. Other than macros, espresso compiler does semantic-analysis, translation and execution. Minimum number of code is sugessted to put inside the
+                multi-statements macro, that code structure is very concise and make esperesso it's beauty.
+                </a>
+
+                <br><br>
+
+                <br><a class="content">
+                  <span class="green">Single-statement macro<span class="black"> ( put c++ code after colon)
+                </a>
+                <p class="output-section">
+                    <code>    <span class="macro">__cplusplus: <span class="yellow">const <span class="green">char<span class="black">* s = <span class="red">"hello __cplusplus macro"<span class="black">; </code>
+                </p>
+                <br>
+                <a class="content">
+                    <span class="green">Multi-statements macro<span class="black"> ( Put multiple c++ codes in inside the curly-braces)
+                </a>
+                <p class="output-section">
+                    <code>    <span class="macro">__cplusplus<span class="black">{</code>
+                    <code>    <br>&emsp;&emsp;&emsp;<span class="yellow">const <span class="green">char<span class="black">* s = <span class="red">"hello __cplusplus macro"<span class="black">; </code>
+                    <code>    <br>&emsp;&emsp;&emsp;<span class="comment">// do some more stuffs with C++ ... </code>
+                    <code>    <br><span class="black">}</code>
+                    <code>    <br><span class="black">console.log(s);<span class="comment">// Correct </code> 
+                </p>
+
+                <br>
+                <a class="content">
+                    <span class="green">Compile-time warnings<span class="black">:
+                </a>
+                <p class="output-section">
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // Warning </code>
+                </p>
+                <p class="output-section">
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="green"> char<span class="black">* s = <span class="red">"hello"<span class="black">; </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="yellow"> return <span class="black"> s; </code>
+                    <code>  <br><span class="black">} <span class="comment"> // NO Warning </code>
+                </p>
+                <br>
+                <a class="content">
+                    <span class="green">Compile-time warnings<span class="black">: <span class="macro">__no_return<span class="black">
+                </a>
+                <p class="output-section">
+                    <code>  <span class="macro">__no_return <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // No Warning  </code>
+                </p>
+
+
+
+                <br><br>
+                
+                <hr class="divider" /><br>
+
+                <a class="content">
+                  APIs reference documentation, provides details information about all fuctions and objects of Espresso, this documentation expalins every APIs in more details, so to implement easily
+                  C++ projects and all APIs are complete compatible with C++11/14/17.
+                </a>
+                <a class="content">
+                  Espresso is very fast web-framework hybrid of C++, the main objective is just to make it easy and simple for C++ developers. This framework is built on top of C++14 and above
+                </a>
+
+                <br><a><span class="green">NOTE:<span class="black"> It's the first version: Espresso_v_1.0.0, so there may occur some exeptions-throw, error or you find any idea.</a>
+                <br><a><span class="black">Kindly contact me: <span class="green">sir.ayaz47@gmail.com</span></a>
+
+                </div>
+        </section>
+        </div>
+
+
+
+        <!-- ===============================FOOTER =============================== -->
+        <footer class="footer">
+            <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed by Nafis Ayaz</small>
+            </div>
+            <!--//container-->
+        </footer>
+        <!--//footer-->
+
+</body>
+
+</html>
