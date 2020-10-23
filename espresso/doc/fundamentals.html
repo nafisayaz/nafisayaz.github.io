@@ -250,7 +250,7 @@
                     <span class="green"> Lambda function<span class="black">
                 </a>
                 <br><br>
-                <a class="content">
+                <!-- <a class="content">
                   <span class="green">function<span class="black">: </code>
                 </a>
                 <p class="output-section">
@@ -263,7 +263,7 @@
                   <code>  <span class="comment"> //Call the say() and prints hello world </code>
                   
                 </p>
-                <br>
+                <br> -->
 
                 <a class="content">
                   <span class="green">Callback function<span class="black">: </code>
@@ -271,8 +271,9 @@
                 <p class="output-section">
                   <code>  <span class="yellow">auto<span class="black"> espresso = 
                           <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
-                  <code>  <br><span class="green">function <span class="black"> say(callback){</code>
-                  <code>  <br>&emsp;&emsp;&emsp;<span class="black"> callback(<span class="red">"hello world"<span class="black">);</code>
+                  <code>  <br><span class="green">void <span class="black"> 
+                          <span class="black">say(std::function<<span class = "green" >void<span class="black">(<span class="green">char<span class="black">*)> foo){</code>
+                  <code>  <br>&emsp;&emsp;&emsp;<span class="black">foo(<span class="red">"hello world"<span class="black">);</code>
                   <code>  <br><span class="black">}</code>
                   <code>  <br><br><span class="black">say( <span class="green"> function<span class="black">(msg){ </code>
                   <code>  <br>&emsp;&emsp;&emsp;console<span class="black">.log(<span class="red">"hello world"<span class="black">);</code>
