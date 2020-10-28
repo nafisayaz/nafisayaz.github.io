@@ -1,6 +1,7 @@
 .output-section {
     padding: 5px;
-    background: #f1f2f3;
+    /* background: #f1f2f3; */
+    background: rgba( 0, 122, 14, 0.1);
 }
 
 .code-section {
