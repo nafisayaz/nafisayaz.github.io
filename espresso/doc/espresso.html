@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <title>Fundamentals | Espresso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nafis Ayaz">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="../../assets/fontawesome/js/all.js"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="../../assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="../../assets/plugins/github-activity/github-activity-0.1.5.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/xperimental.css">
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/pipeline_code.css">
+    <link id="theme-style" rel="stylesheet" href="../../assets/css/colors.css">
+
+</head>
+
+<body>
+    <header class="menubar">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="/xperimental_lib.html">Xperimental Library</a></li>
+            <li class="list-inline-item"><a href="/espresso/doc.html">Espresso</a></li>
+            <li class="list-inline-item"><a href="#">Zudoov AI</a></li>
+            <ul>
+    </header>
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left rounded-circle" style="height:150px; width:150px" src="../../assets/images/me.svg" alt="profile image" />
+            <div class="profile-content float-left">
+                <h1 class="name">Nafis Ayaz</h1>
+                <h2 class="desc">C++ Software Engineer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-stack-overflow"></i></a></li>
+                    <li class="list-inline-item last-item"><a href="#"><i class="fab fa-codepen"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container sections-wrapper">
+
+        <section class="about section">
+            <div class="section-inner shadow-sm rounded">
+                <h1 class="heading">Espresso: Fundamentals </h1>
+                <div class="content">
+                    <p>
+                        <li>Espresso - <span class="black">A web-framework that is compatible to <span class="green">C++14<span class="black"> and above.
+                        This Tutorial will guide you to know what are the basics or fundamentals that <span class="green">espresso module<span class="black"> provides.
+                        All the sub-modules of espresso has it's own and converts to executable code. 
+                        Distributed to apt repository from where can be installed on Linux system.
+                    </li>
+                  </p>
+
+              </div>
+
+              <a class="content">
+                Check Gcc version already install, must have gcc-7.5 or above. Follow the link: <a href="../../espresso/doc/get_started.html"> Get Started </a>
+              </a><br>
+              
+                <hr class="divider" /><br>
+
+                <div class="content">
+                    <h4 class="content">Properties</h4>
+                  <p>
+                      <li> <a href="#"> __filename</a> </li>
+                      <li> <a href="#"> __filepath</a> </li>
+                      <li> <a href="#"> __pathname</a> </li>
+                      <li> <a href="#"> __dirname</a> </li>
+                      <li> <a href="#"> request.m_header</a> </li>
+                      <li> <a href="#"> request.m_baseUrls</a> </li>
+                      <li> <a href="#"> request.m_hostname</a> </li>
+                      <li> <a href="#"> request.m_port</a> </li>
+                      <li> <a href="#"> request.m_ip</a> </li>
+                      <li> <a href="#"> request.m_method</a> </li>
+                      <li> <a href="#"> request.m_query</a> </li>
+                      <li> <a href="#"> request.m_param</a> </li>
+                      <li> <a href="#"> request.m_filename</a> </li>
+                      <li> <a href="#"> request.m_protocol</a> </li>
+                      <li> <a href="#"> request.m_state</a> </li>
+                      <li> <a href="#"> request.m_userAgent</a> </li>
+                  </p>
+                  <h4 class="content">Methods</h4>
+                  <li> <a href="#"> <code>request.header()</code></a></li>
+                  <li> <a href="#"> <code>request.get_ip()</code></a> </li>
+                </div>
+                <br><br><br>
+
+
+                <h3 class="title"> Module </h3>
+                <a class="content">
+                  <span class="black"> when a module is imported means actually the module is initialized and the instance is returned, the 
+                  <span class="green"> typeof
+                  <span class="grey"> instance
+                <br><br>
+                <a class="content">
+                  <span class="green">espresso<span class="black"> Module:
+                </a>
+                <a class="content">
+                  When espresso module is imported - all the basics modules are initiated and the super module espresso instance is returned, the
+                  <span class="green"> typeof
+                  <span class="grey">  espresso
+                  <span class="black">. Example: the macro of current directory <span class="macro"> __dir <span class="black"> is initialized through which current directory is accessed.
+                </a>
+                <p class="output-section">
+                  <code>    <span class="yellow">auto<span class="black"> espresso = <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">); </code>
+                  <span class="comment"> // Standard super module
+                  <code>    <br>console<span class="black">.log(<span class="macro">__dir<span class="black">); </code>
+                  <span class="comment"> // console is instatiated and macro __dir is initialized
+                </p>
+                <br>
+
+
+                <h3 class="title"> Console </h3>
+                <a>
+                  Console is super module in which log function and err function are defined. 
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="green">console.log<span class="black"> function: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br>console<span class="black" >.log(<span class="red">"hello world"<span class="black">); </code>
+                </p>
+                <br>
+
+
+
+                <h3 class="title"> Default type </h3>
+                <a>
+                  <span class="black">Default type: <span class="green"> auto <span class="black">, beside this there are few more types are defined: 
+                  <span class="green"> var<span class="black">, <span class="green"> Integer <span class="black">.  
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="green">auto<span class="black"> type: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> auto <span class="balck"> n = <span class="red">123<span class="black">;</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro"> __typeof <span class="black"> n); </code>
+                            <span class="comment"> // int
+
+                </p>
+                <br>
+                <a class="content">
+                  <span class="green">var<span class="black"> type: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> var <span class="balck"> n = <span class="red">123<span class="black">;</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro"> __typeof <span class="black">n); </code>
+                          <span class="comment"> // var
+
+                </p>
+                <br>
+                <a class="content">
+                  <span class="green">Integer<span class="black"> type: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> Integer <span class="balck"> n = <span class="red">123<span class="black">;</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro"> __typeof <span class="black"> n); </code>
+                            <span class="comment"> // Integer
+                  </p>
+                <br><br>
+
+                <h3 class="title"> Typeof </h3>
+                <a>
+                  <span class="black">Default type: <span class="green"> auto <span class="black">, beside this there are few more types are defined: 
+                  <span class="green"> var<span class="black">, <span class="green"> Integer <span class="black">.  
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="macro">__typeof<span class="black"> macro: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> Integer <span class="balck"> n = <span class="red">123<span class="black">;</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro">__typeof <span class="black">n); </code>
+                </p>
+                <br><br>
+
+                <h3 class="title"> New </h3>
+                <a>
+                  Allocates dynamic memory allocation, <span class="macro">__new <span class="black"> macro is allocates a memory on heap  and returns a pointer pointing to.
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="macro">__new<span class="black"> macro: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> var <span class="black"> n = <span class="macro">__new <span class="red">123<span class="black">;</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro">__typeof <span class="black">n); </code>
+                          <span class="comment"> // Integer * type -> naked pointer causes memory leakage
+                  
+                </p>
+                <br><br>
+
+                <h3 class="title"> Scope </h3>
+                <a>
+                  Allocates dynamic memory allocation, <span class="macro">__new <span class="black"> macro is allocates a memory on heap  and returns a pointer pointing to.
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="macro">__new<span class="black"> macro: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br> <span class="yellow"> var <span class="black"> n = scope(<span class="macro">__new <span class="red">123<span class="black">);</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro">__typeof <span class="black">n); </code>
+                          <span class="comment"> // Integer * type -> No memory leakage: Deletes the pointer when goes out of scope
+                  
+                </p>
+                <br><br>
+
+                <h3 class="title"> Functions </h3>
+                <a>
+                  Espresso provides multiple function like: <span class="green"> Callback function<span class="black">,<span class="green"> Anonymous function<span class="black"> and
+                    <span class="green"> Lambda function<span class="black">
+                </a>
+                <br><br>
+                <!-- <a class="content">
+                  <span class="green">function<span class="black">: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br><span class="green">function <span class="black"> say(){</code>
+                  <code>  <br>&emsp;&emsp;&emsp;console<span class="black">.log(<span class="red">"hello world"<span class="black">);</code>
+                  <code>  <br><span class="black">}</code>
+                  <code>  <br><br><span class="black">say();</code>
+                  <code>  <span class="comment"> //Call the say() and prints hello world </code>
+                  
+                </p>
+                <br> -->
+
+                <a class="content">
+                  <span class="green">Callback function<span class="black">: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br><span class="green">void <span class="black"> 
+                          <span class="black">say(<span class = "green" >void<span class="black">(*foo)(<span class="green">char<span class="black">*)){</code>
+                  <code>  <br>&emsp;&emsp;&emsp;<span class="black">foo(<span class="red">"hello world"<span class="black">);</code>
+                  <code>  <br><span class="black">}</code>
+                  <code>  <br><br><span class="black">say( <span class="green"> function<span class="black">(msg){ </code>
+                  <code>  <br>&emsp;&emsp;&emsp;console<span class="black">.log(msg);</code>
+                  <code>  <br><span class="black">});</code>
+                  <code>  <span class="comment"> //Call the say() and prints hello world </code>
+                </p>
+                <br>
+
+                <a class="content">
+                  <span class="green">Lambda function<span class="black">: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br><span class="yellow">auto <span class="black">func = <span class="green">function<span class="black">(x, y){</code>
+                  <code>  <br>&emsp;&emsp;&emsp;<span class="yellow"> return <span class="black"> x + y;</code>
+                  <code>  <br><span class="black">}</code>
+                  <code>  <br>console<span class="black">.log(func(<span class="red">2<spa class="black">, <span class="red">2<spa class="black">));</code>
+                  <code>  <span class="comment"> // 4 </code>
+                </p>
+                <br>
+
+
+
+
+                <!-- <br>
+                <a class="content">
+                  <span class="green">Operator<span class="black">: calls Operator <code> ()</code>
+                  and return main application object which is binded to http protocol 
+                </a>
+                <p class="output-section">
+                  <code><span class="yellow">auto<span class="black"> app = espresso();</code>
+                </p>
+                <br>
+                <a class="content">
+                  <span class="green">Typeof<span class="black">: Return (String)</code>
+                  and return main application object which is binded to http protocol 
+                </a>
+                <p class="output-section">
+                  <code><span class="yellow">console.log(<span class="green">typeof<span class="black">(app)); <span class="comment">// Return Http  </code>
+                </p>
+
+                <br><br><h3 class="title">Macro </h3>
+                <a class="content">
+                    The macros are flags, the codes inside the curly braces are not executed with Espresso+ compiler. The macros are itself help to differentiate espresso code and c++ code 
+                    <a href="#">Espresso+</a> removes the __cplusplus macros and put as it is. Other than macros, espresso compiler does semantic-analysis, translation and execution. Minimum number of code is sugessted to put inside the
+                multi-statements macro, that code structure is very concise and make esperesso it's beauty.
+                </a> -->
+
+
+
+
+
+                <br><br>
+
+                <br><a class="content">
+                  <span class="green">Single-statement macro<span class="black"> ( put c++ code after colon)
+                </a>
+                <p class="output-section">
+                    <code>    <span class="macro">__cplusplus: <span class="yellow">const <span class="green">char<span class="black">* s = <span class="red">"hello __cplusplus macro"<span class="black">; </code>
+                </p>
+                <br>
+                <a class="content">
+                    <span class="green">Multi-statements macro<span class="black"> ( Put multiple c++ codes in inside the curly-braces)
+                </a>
+                <p class="output-section">
+                    <code>    <span class="macro">__cplusplus<span class="black">{</code>
+                    <code>    <br>&emsp;&emsp;&emsp;<span class="yellow">const <span class="green">char<span class="black">* s = <span class="red">"hello __cplusplus macro"<span class="black">; </code>
+                    <code>    <br>&emsp;&emsp;&emsp;<span class="comment">// do some more stuffs with C++ ... </code>
+                    <code>    <br><span class="black">}</code>
+                    <code>    <br><span class="black">console.log(s);<span class="comment">// Correct </code> 
+                </p>
+
+                <br>
+                <a class="content">
+                    <span class="green">Compile-time warnings<span class="black">:
+                </a>
+                <p class="output-section">
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // Warning </code>
+                </p>
+                <p class="output-section">
+                    <code>  <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="green"> char<span class="black">* s = <span class="red">"hello"<span class="black">; </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="yellow"> return <span class="black"> s; </code>
+                    <code>  <br><span class="black">} <span class="comment"> // NO Warning </code>
+                </p>
+                <br>
+                <a class="content">
+                    <span class="green">Compile-time warnings<span class="black">: <span class="macro">__no_return<span class="black">
+                </a>
+                <p class="output-section">
+                    <code>  <span class="macro">__no_return <span class="green">function<span class="black"> say() { </code>
+                    <code>  <br>&emsp;&emsp;&emsp;<span class="black"> console.log(<span class="red">" hello"<span class="black">); </code>
+                    <code>  <br><span class="black">} <span class="comment"> // No Warning  </code>
+                </p>
+                <br>
+
+                <h3 class="title"> Current directory </h3>
+                <a>
+                  Espresso has it's in-built current directory path, <span class="macro">__dir <span class="black"> return current dirname
+                  where main application running. 
+                </a>
+                <br><br>
+                <a class="content">
+                  <span class="macro">__dir<span class="black"> macro: </code>
+                </a>
+                <p class="output-section">
+                  <code>  <span class="yellow">auto<span class="black"> espresso = 
+                          <span class="include">import<span class="black">(<span class="red">"espresso"<span class="black">);</code>
+                  <code>  <br>console<span class="black" >.log(<span class="macro">__dir<span class="black">); </code>
+                </p>
+                <br><br>
+
+
+
+                <br><br>
+                
+                <hr class="divider" /><br>
+
+                <a class="content">
+                  APIs reference documentation, provides details information about all fuctions and objects of Espresso, this documentation expalins every APIs in more details, so to implement easily
+                  C++ projects and all APIs are complete compatible with C++11/14/17.
+                </a>
+                <a class="content">
+                  Espresso is very fast web-framework hybrid of C++, the main objective is just to make it easy and simple for C++ developers. This framework is built on top of C++14 and above
+                </a>
+
+                <br><a><span class="green">NOTE:<span class="black"> It's the first version: Espresso_v_1.0.0, so there may occur some exeptions-throw, error or you find any idea.</a>
+                <br><a><span class="black">Kindly contact me: <span class="green">sir.ayaz47@gmail.com</span></a>
+
+                </div>
+        </section>
+        </div>
+
+
+
+        <!-- ===============================FOOTER =============================== -->
+        <footer class="footer">
+            <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed by Nafis Ayaz</small>
+            </div>
+            <!--//container-->
+        </footer>
+        <!--//footer-->
+
+</body>
+
+</html>
